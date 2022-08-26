@@ -24,7 +24,7 @@ public class SchemaUtil {
     Double temperature;
     Double humidity;
     //时间
-    int Timestamp;
+    long Timestamp;
     String stringtime;
     //随机字符串
     String randomString;
@@ -58,7 +58,7 @@ public class SchemaUtil {
         temperature = Double.valueOf(String.format("%.2f",(random.nextDouble()*50-10)));
         humidity = Double.valueOf(String.format("%.2f",random.nextDouble()*100));
         TimeNow = System.currentTimeMillis();
-        Timestamp = (int) (random.nextLong()+TimeNow);
+        Timestamp = random.nextInt(999999999)+TimeNow;
         stringtime = sdf.format(Timestamp);
         randomString = RandomStringUtils.random(20,PayloadHouse);
         int temp = random.nextInt(10);

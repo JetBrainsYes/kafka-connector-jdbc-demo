@@ -16,15 +16,15 @@ public class payload {
     private Double latitude;
     private Double temperature;
     private Double humidity;
-    private int tabletime;
+    private long tabletime;
     private String stringtime;
     private String randomstring;
 
-    public int getTabletime() {
+    public long getTabletime() {
         return tabletime;
     }
 
-    public void setTabletime(int tabletime) {
+    public void setTabletime(long tabletime) {
         this.tabletime = tabletime;
     }
 

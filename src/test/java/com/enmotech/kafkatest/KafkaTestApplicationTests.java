@@ -21,9 +21,4 @@ class KafkaTestApplicationTests {
             System.out.println(random.nextDouble()*100);
         }
     }
-
-    @Test
-    void test2(){
-
-    }
 }
